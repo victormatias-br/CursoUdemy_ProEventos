@@ -14,26 +14,26 @@ namespace ProEventos.API.Controllers
     public class EventoController : ControllerBase
     {
 
-        // public IEnumerable<Evento> _evento = new Evento[]{
-        //         new Evento{
-        //             EventoId = 1,
-        //             Tema = "Angular 11 e .NET 5",
-        //             Local = "Belo Horizonte",
-        //             Lote = "1o Lote",
-        //             QtdPessoas = 250,
-        //             DataEvento = DateTime.Now.AddDays(2),
-        //             ImagemURL = "foto2.png"
-        //         },
-        //         new Evento{
-        //             EventoId = 2,
-        //             Tema = "Angular e suas novidades",
-        //             Local = "São Paulo",
-        //             Lote = "2o Lote",
-        //             QtdPessoas = 350,
-        //             DataEvento = DateTime.Now.AddDays(4),
-        //             ImagemURL = "foto5.png"
-        //         }
-        //     };
+        public IEnumerable<Evento> _evento = new Evento[]{
+                new Evento{
+                    EventoId = 1,
+                    Tema = "Angular 11 e .NET 5",
+                    Local = "Belo Horizonte",
+                    Lote = "1o Lote",
+                    QtdPessoas = 250,
+                    DataEvento = DateTime.Now.AddDays(2),
+                    ImagemURL = "foto2.png"
+                },
+                new Evento{
+                    EventoId = 2,
+                    Tema = "Angular e suas novidades",
+                    Local = "São Paulo",
+                    Lote = "2o Lote",
+                    QtdPessoas = 350,
+                    DataEvento = DateTime.Now.AddDays(4),
+                    ImagemURL = "foto5.png"
+                }
+            };
         private readonly DataContext _context;
 
         public EventoController(DataContext context)
